@@ -1,0 +1,9 @@
+config:
+  aws:region: us-east-2
+  serverless-fastify-starter:accessTokenSecret:
+    secure: create-new-one
+  serverless-fastify-starter:apiEndpoint: api.addyourdomain.com
+  serverless-fastify-starter:deployedBy: pulumi
+  serverless-fastify-starter:project: serverless-fastify-starter
+  serverless-fastify-starter:sesDomain: addyourdomain.com
+  pulumi:template: serverless-aws-typescript

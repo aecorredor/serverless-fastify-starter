@@ -1,0 +1,23 @@
+schema: ./src/schemas/**/*
+documents: ./src/test/test-operations/**/*
+generates:
+  src/generated/resolvers.ts:
+    plugins:
+      - typescript
+      - typescript-resolvers
+    config:
+      enumsAsConst: true
+      internalResolversPrefix: ''
+      contextType: mercurius#MercuriusContext
+      mappers:
+        # Add custom database mappers here.
+        # ExampleEntity: ../typings/resolver-mappers#ExampleEntityMapper
+  src/generated/operations.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-graphql-request
+    config:
+      enumsAsConst: true
+      dedupeOperationSuffix: true
+      exportFragmentSpreadSubTypes: true

@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src", "deploy", "bin", "jest.config.js", "prettier.config.js"],
+  "exclude": [
+    "**/node_modules",
+    "**/dist",
+    "**/dist-post-ts",
+    "**/build",
+    "**/.*/"
+  ],
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true
+  }
+}

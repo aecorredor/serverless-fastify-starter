@@ -1,0 +1,11 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/generated": true,
+  },
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "${workspaceFolder}/.github/workflows/*.yml"
+  },
+}

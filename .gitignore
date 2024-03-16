@@ -1,0 +1,21 @@
+# Logs
+/logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+/node_modules
+
+# dotenv environment variables file
+.env
+
+# misc
+.DS_Store
+
+/src/generated/tmp-resolvers
+
+/dist
+/dist-post-ts
+/build
+
+/dynamodb-local-data
