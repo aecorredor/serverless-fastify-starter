@@ -87,7 +87,7 @@ describe('user resolvers', () => {
 
     expect(emailCodes.length).toBe(2);
 
-    const { data: confirmEmailData1 } = await testClient.mutate<
+    const { data: confirmEmailData1, errors } = await testClient.mutate<
       ConfirmEmailMutation,
       ConfirmEmailMutationVariables
     >(ConfirmEmailDocument, {
@@ -98,6 +98,8 @@ describe('user resolvers', () => {
         },
       },
     });
+
+    console.log(JSON.stringify(errors, null, 2));
 
     expect(confirmEmailData1.confirmEmail.accessToken).toEqual(
       expect.any(String)

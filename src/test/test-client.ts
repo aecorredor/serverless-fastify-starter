@@ -3,7 +3,6 @@ import { createMercuriusTestClient } from 'mercurius-integration-testing';
 import { createAccessToken } from '../utils/auth';
 import { createConfig } from '../config/index';
 import { connections } from '../test/test-dynamo';
-import '../test/test-sqs';
 import { createTestApp } from '../server';
 import { JwtUser } from '../typings/user';
 
