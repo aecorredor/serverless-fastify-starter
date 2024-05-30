@@ -25,7 +25,7 @@ export const sendEmail = (template: EmailTemplate) => {
     transporter.sendMail(
       {
         ...template,
-        from: '"Add Your Subject" <no-reply@addyourdomain.com>',
+        from: '"TODO Add Your Subject" <no-reply@TODO-addyourdomain.com>',
       },
       (error) => {
         if (error) {

@@ -48,7 +48,10 @@ export const createApp = ({
 
       const hostname = new URL(origin).hostname;
 
-      if (hostname === 'localhost' || hostname.includes('addyourdomain.com')) {
+      if (
+        hostname === 'localhost' ||
+        hostname.includes('TODO-addyourdomain.com')
+      ) {
         cb(null, true);
         return;
       }
