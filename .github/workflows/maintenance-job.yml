@@ -22,7 +22,6 @@ jobs:
 
     - name: Run maintenance jobs
       env:
-        SPORTMONKS_TOKEN: ${{ secrets.SPORTMONKS_TOKEN }}
         DEV_AWS_ACCESS_KEY_ID: ${{ secrets.DEV_AWS_ACCESS_KEY_ID }}
         DEV_AWS_SECRET_ACCESS_KEY: ${{ secrets.DEV_AWS_SECRET_ACCESS_KEY }}
         PROD_AWS_ACCESS_KEY_ID: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
