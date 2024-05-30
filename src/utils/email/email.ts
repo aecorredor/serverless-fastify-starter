@@ -43,7 +43,7 @@ export const getSignInTemplate = (user: User, confirmationCode: string) => {
   const subject = `Your confirmation code: ${confirmationCode}`;
   const html = `
   <p>You are receiving this email because you've tried to sign in to
-  DraftPass. Enter the following code to sign in:</p>
+  <TODO-SERVICE-NAME>. Enter the following code to sign in:</p>
 
   <p><b>${confirmationCode}</b></p>
 
