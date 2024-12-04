@@ -41,6 +41,9 @@ const sslCert = new aws.acm.Certificate(
 // my-api.execute-api.us-east-1.amazonaws.com and the domain name is
 // my-domain.com, you would create a CNAME record that maps my-domain.com to
 // my-api.execute-api.us-east-1.amazonaws.com.
+// For example, with 2 environments, dev and prod:
+// dev.api.my-domain.com: dev.api CNAME ${id}.execute-api.us-east-1.amazonaws.com.
+// api.my-domain.com:     api     CNAME ${id}.execute-api.us-east-1.amazonaws.com.
 const sslCertValidationRecord = new aws.route53.Record(
   `${apiHandlerName}-ssl-cert-validation-record`,
   {
